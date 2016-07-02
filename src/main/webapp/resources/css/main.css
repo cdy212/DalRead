@@ -1,0 +1,247 @@
+@CHARSET "UTF-8";
+
+	@media screen and (min-width: 780px) { 
+	  .modal.modal-center:before {
+	    display: inline-block;
+	    vertical-align: middle;
+	    content: " ";
+	    height: 100%;
+	  }
+	}
+	@media screen and (min-width:600px) {
+	}
+	
+	@media screen and (max-width:460px) {
+		#comment {
+			//이건 안먹는거 같다...
+			background-color: red;
+		    height: 100px;
+		}
+/* 		.modal { */
+/* 		    padding-top: 20px; Location of the box		    */
+/* 		} */
+/* 		.modal-content { */
+/* 		    width: 80%; */
+/* 		    background-color: #000000; */
+/* 		} */
+/* 		#divTextArea { */
+/* 			position: static;		 */
+/* 			bottom : 50px; */
+/* 			width : 100%; */
+/* 			height : auto; */
+/* 			padding-top : 50px; */
+/* 		} */
+	}
+
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	    border-color: #000 !important;
+	}
+	
+	
+/* 	.navbar-default { */
+/* 	    background-color: #2fa4e7; */
+/* 	    border-color: #1995dc; */
+/* 	} */
+	
+	ul > li.help > span.unvisible {		
+		visibility:hidden;
+	}
+	/* 로그인 폼 */
+	.loing_input {
+		width: 100%;
+    	padding: 5px;
+    	margin-bottom: 15px;
+    	border: 1px solid #ddd;
+	}
+	
+	/* divTextArea */
+	#divTextArea {
+		position: static;		
+		bottom : 50px;
+		width : 100%;
+		height : auto;
+		padding-top : 20px;
+	}
+	
+	textarea#comment {
+	    height: 200px;
+	}
+	
+	/* 모달창의 위치 조절*/
+	.modal.modal-center {
+	  text-align: center;
+	}
+	
+	.modal-dialog.modal-center {
+	  display: inline-block;
+	  text-align: left;
+	  vertical-align: middle; 
+	}
+
+
+	/* Add Animation */
+	@-webkit-keyframes animatetop {
+	    from {top:-300px; opacity:0} 
+	    to {top:0; opacity:1}
+	}
+	@keyframes animatetop {
+	    from {top:-300px; opacity:0}
+	    to {top:0; opacity:1}
+	}
+
+/* 	.modal-header { */
+/* 	    padding: 2px 16px; */
+/* 		border-bottom-style: none; */
+/* 	    background-color: white; */
+/* 	    color: black; */
+/* 	} */
+/* 	.modal-body { */
+/* 		padding: 2px 16px; */
+/* 		border-style: none; */
+/* 	} */
+/* 	.modal-footer { */
+/* 	    padding: 2px 16px; */
+/* 	    background-color: #5cb85c; */
+/* 	    color: white; */
+/* 	} */
+	
+	#loginLogout {
+		text-align: right;
+	}  
+
+	#btnLogin {
+		color:white;
+	}  
+	
+	#loginUserName {
+		color:white;
+	}  
+  
+/* 	.bg-1 { */
+/* 	    background-color: #1abc9c; Green */
+/* 	    color: #ffffff; */
+/* 	} */
+/* 	.bg-2 { */
+/* 	    background-color: #474e5d; Dark Blue */
+/* 	    color: #ffffff; */
+/* 	} */
+/* 	.bg-3 { */
+/* 	    background-color: #ffffff; White */
+/* 	    color: #555555; */
+/* 	} */
+	.container-fluid {
+	    padding-top: 0px;
+	    padding-bottom: 0px;
+	}
+	
+
+/* 		.modal { */
+/* 	    display: none; Hidden by default */
+/* 	    position: fixed; Stay in place */
+/* 	    z-index: 1; Sit on top */
+/* 	    padding-top: 100px; Location of the box */
+/* 	    left: 0; */
+/* 	    top: 0; */
+/* 	    width: 100%; Full width */
+/* 	    height: 100%; Full height */
+/* 	    overflow: auto; Enable scroll if needed */
+/* 	    background-color: rgb(0,0,0); Fallback color */
+/* 	    background-color: rgba(0,0,0,0.4); Black w/ opacity */
+/* 	} */
+/* 	/* Modal Content */ */
+/* 	.modal-content { */
+/* 	    position: relative; */
+/* 	    background-color: #fefefe; */
+/* 	    margin: auto; */
+/* 	    padding: 0; */
+/* 	    border: 1px solid #888; */
+/* 	    width: 30%; */
+/* 		height: 90%; */
+/* 	    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); */
+/* 	    -webkit-animation-name: animatetop; */
+/* 	    -webkit-animation-duration: 0.4s; */
+/* 	    animation-name: animatetop; */
+/* 	    animation-duration: 0.4s */
+/* 	} */
+/* 	/* Add Animation */ */
+/* 	@-webkit-keyframes animatetop { */
+/* 	    from {top:-300px; opacity:0}  */
+/* 	    to {top:0; opacity:1} */
+/* 	} */
+/* 	@keyframes animatetop { */
+/* 	    from {top:-300px; opacity:0} */
+/* 	    to {top:0; opacity:1} */
+/* 	} */
+/* 	/* The Close Button */ */
+/* 	.close { */
+/* 	    color: gray; */
+/* 	    float: right; */
+/* 	    font-size: 28px; */
+/* 	    font-weight: bold; */
+/* 	} */
+/* 	.close:hover, */
+/* 	.close:focus { */
+/* 	    color: red; */
+/* 	    text-decoration: none; */
+/* 	    cursor: pointer; */
+/* 	} */
+	
+/* 	.modal-header { */
+/* 	    padding: 2px 16px; */
+/* 		border-bottom-style: none; */
+/* 	    background-color: white; */
+/* 	    color: black; */
+/* 	} */
+/* 	.modal-body { */
+/* 		padding: 2px 16px; */
+/* 		border-style: none; */
+/* 	} */
+/* 	.modal-footer { */
+/* 	    padding: 2px 16px; */
+/* 	    background-color: #5cb85c; */
+/* 	    color: white; */
+/* 	} */
+		.bg-1 {
+		    background-color: #1abc9c; /* Green */
+		    color: #ffffff;
+		}
+		.bg-2 {
+		    background-color: #474e5d; /* Dark Blue */
+		    color: #ffffff;
+		}
+		.bg-3 {
+		    background-color: #ffffff; /* White */
+		    color: #555555;
+		}
+		.container-fluid {
+		    padding-top: 0px;
+		    padding-bottom: 0px;
+		}
+		.dr_right {
+		    float: right;		    
+		   
+		}
+		
+		.dr_left {
+		    float: left;		    
+		    font-size: 150%;
+		    padding: 20px;
+		    
+		}
+		
+		.dr_center {
+		   	float: center;  
+		    font-size: 150%;
+		    padding: 20px;
+		    
+		}
+		
+`		.container {
+			/* word-break: nowrap;
+			text-overflow : clip; */
+			/* word-wrap: break-word; */
+			white-space: pre-wrap;
+			word-wrap: break-word;
+		}
+	
+	

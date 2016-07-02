@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+ <mapper namespace="member">
+ 	<select id="select" resultType="hashmap">
+	SELECT `DIC_ENG`.`WORD`,
+			`DIC_ENG`.`WORDORI`,
+			`DIC_ENG`.`PRONOUNCE`,
+			`DIC_ENG`.`MEANING_KO`,
+			`DIC_ENG`.`MEANING_CH_S`,
+			`DIC_ENG`.`MEANING_CH_T`,
+			`DIC_ENG`.`MEANING_JP`,
+			`DIC_ENG`.`WORDLEVEL`,
+			`DIC_ENG`.`KNOW`
+	FROM `test`.`DIC_ENG`
+	where word = 'love'
+ 	</select>
+ 	
+ 	
+ 	<select id="loginChk" resultType="hashmap" parameterType="String">
+		select UID, EMAIL, PWD, NAME from test.TBL_MEMBER where EMAIL=#{id}
+ 	</select>
+
+<!--  	<select id="getStudyLang" resultType="String" parameterType="String"> -->
+<!-- 		select UID, EMAIL, PWD, NAME from test.TBL_MEMBER where EMAIL=#{id} -->
+<!--  	</select> -->
+ 	
+ </mapper>

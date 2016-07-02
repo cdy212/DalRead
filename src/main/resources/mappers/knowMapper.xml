@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+ <mapper namespace="com.dalnimsoft.mapper.KnowMapper">
+ 	<select id="getTime" resultType="string">
+ 		select now()
+ 	</select>
+ 	<insert id="insertKnow">
+ 		insert into test.KNOW_ENG (uid, word) values (#{uid}, #{word})
+ 	</insert>
+ 	
+ 	<select id="selectKnowByID" resultType="com.dalnimsoft.domain.KnowVO">
+ 		select *
+ 		from test.KNOW_ENG
+ 		where uid = #{uid}
+ 		LIMIT 1
+ 	</select>
+ 	
+ 	<select id="selectKnowByIDAndWord" resultType="com.dalnimsoft.domain.KnowVO">
+ 		select *
+ 		from test.KNOW_ENG
+ 		where uid = #{uid} and word=#{word}
+ 		LIMIT 1
+ 	</select>
+ 	
+ 	<delete id="deleteByID">
+ 		delete from test.KNOW_ENG
+ 		where uid=#{uid}
+ 	</delete>
+
+ 	<delete id="deleteByIDAndWord">
+ 		delete from test.KNOW_ENG
+ 		where uid=#{uid} and word = #{word}
+ 	</delete>
+ 	
+ </mapper>
